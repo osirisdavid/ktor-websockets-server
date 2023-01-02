@@ -12,12 +12,12 @@ import java.util.Collections
 
 
 fun Application.configureSockets() {
-    /*install(WebSockets) {
+    install(WebSockets) {
         pingPeriod = Duration.ofSeconds(15)
         timeout = Duration.ofSeconds(15)
         maxFrameSize = Long.MAX_VALUE
         masking = false
-    }*/
+    }
 
     routing {
         val connections = Collections.synchronizedSet<Connection?>(LinkedHashSet())
